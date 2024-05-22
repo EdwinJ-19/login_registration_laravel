@@ -1,3 +1,14 @@
-<div>
-    <!-- Waste no more time arguing what a good man should be, be one. - Marcus Aurelius -->
-</div>
+<x-app-layout>
+    <!-- Well begun is half done. - Aristotle -->
+    <div class="note-container single-note">
+        <h1>Create new note</h1>
+        <form action="{{route('note.store')}}" method="POST" class="note">
+            @csrf
+            <textarea name="note" class="note-body" rows="10" placeholder="Enter your note here"></textarea>
+            <div class="note-buttons">
+                <a href="{{route('note.index')}}" class="note-cancel-button">Cancel</a>
+                <button class="note-submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</x-app-layout>

@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
     <!-- Simplicity is an acquired taste. - Katharine Gerould -->
     <div class="note-container">
         <h2><a href="{{route('note.create')}}" class="new-note-btn">New Note</a></h2>
@@ -23,4 +23,4 @@
         </div>
         {{-- {{ $note->links() }} --}}
     </div>
-</x-layout>
+</x-app-layout>
